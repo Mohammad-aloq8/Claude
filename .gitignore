@@ -1,0 +1,34 @@
+﻿# Secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+id_rsa*
+id_ed25519*
+credentials*.json
+service-account*.json
+secrets/
+*.secret
+
+# Claude Code local-only files
+.claude/settings.local.json
+CLAUDE.local.md
+
+# Dependencies, builds, logs
+node_modules/
+.venv/
+venv/
+__pycache__/
+dist/
+build/
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
