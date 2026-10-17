@@ -83,6 +83,12 @@ Ask before destructive actions, externally visible changes, deployments, or anyt
 - Use tools/permissions only as needed; keep agent/skill permissions narrow.
 - Prefer project-level config over global changes.
 
+## Lessons Learned
+- @.claude/lessons.md is loaded every session; follow it.
+- After any mistake, user correction, failed check, or non-obvious discovery: add a concise entry to `.claude/lessons.md` (rule + why + scope) in the same turn. If it is a durable project convention, also update the relevant section of this file or the relevant `SKILL.md`/agent file.
+- Check for an existing entry first; update or merge instead of duplicating. Remove entries that become wrong.
+- Never record secrets, credentials, or personal data.
+
 ## Documentation
 - Keep docs accurate and concise; document setup, env vars, security assumptions, permissions (no secrets).
 - Don't duplicate authoritative docs; update docs when behavior, config, or security controls change.
